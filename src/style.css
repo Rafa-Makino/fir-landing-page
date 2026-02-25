@@ -27,22 +27,17 @@ header {
   margin-bottom: 2rem;
 }
 
-.logo-texto {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: var(--cor-secundaria);
-  margin: 0;
-  letter-spacing: 2px;
-  /* Efeito de brilho neon sutil */
-  text-shadow: 0 0 15px rgba(255, 245, 225, 0.3);
+.logo-img {
+  max-width: 180px; /* Controla o tamanho da logo */
+  height: auto;
+  /* Esse filtro devolve o brilho neon que o recorte pode ter tirado! */
+  filter: drop-shadow(0 0 12px rgba(255, 183, 3, 0.4)); 
+  transition: transform 0.3s ease;
 }
 
-.logo-sub {
-  font-size: 1rem;
-  color: var(--cor-primaria);
-  margin: 0;
-  font-weight: 300;
-  letter-spacing: 1px;
+.logo-img:hover {
+  transform: scale(1.05); /* Um charminho quando passar o mouse */
+  filter: drop-shadow(0 0 20px rgba(255, 183, 3, 0.6));
 }
 
 main {
