@@ -4,37 +4,76 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FIR* Technology Solutions</title>
+
+    <link rel="icon" type="image/png" href="/favicon1.png" />
   </head>
   <body>
     
-   <header>
-      <img src="/logo.png" alt="Logo FIR Technology Solutions" class="logo-img">
-    </header>
-    
-    <main>
-      <h2 class="titulo">Nossas Soluções</h2>
-      
-      <div class="carousel-container">
-        <button id="btn-voltar" class="carousel-btn">❮</button>
-        
-        <div class="carousel-track" id="track">
-          <div class="carousel-slide">
-            <h2>Desenvolvimento Web</h2>
-            <p>Criamos sites rápidos, modernos e focados em performance.</p>
-          </div>
-          <div class="carousel-slide">
-            <h2>Sistemas Sob Medida</h2>
-            <p>Soluções tecnológicas inteligentes para otimizar a sua empresa.</p>
-          </div>
-          <div class="carousel-slide">
-            <h2>Consultoria em TI</h2>
-            <p>Direcionamento estratégico para suas decisões tecnológicas.</p>
-          </div>
-        </div>
-        
-        <button id="btn-avancar" class="carousel-btn">❯</button>
+    <header class="navbar">
+      <div class="logo-container">
+        <a href="#">
+          <img src="/logo.png" alt="Logo FIR Technology Solutions" class="logo-img-nav">
+        </a>
       </div>
+      
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h2>Transformando ideias em <span class="destaque-neon">Soluções Digitais</span></h2>
+        <p>Potencialize o seu negócio com tecnologia de ponta, performance extrema e design focado em resultados.</p>
+        <a href="#servicos" class="btn-principal">Conheça Nossas Soluções</a>
+      </section>
+
+      <section id="servicos" class="secao">
+        <h2 class="titulo">O que nós fazemos</h2>
+        
+        <div class="carousel-container">
+          <button id="btn-voltar" class="carousel-btn">❮</button>
+          
+          <div class="carousel-track" id="track">
+            <div class="carousel-slide">
+              <h2>Sites de Alta Performance</h2>
+              <p>Landing pages e sites institucionais ultra-rápidos que convertem visitantes em clientes.</p>
+            </div>
+            <div class="carousel-slide">
+              <h2>Sistemas Web</h2>
+              <p>Ferramentas sob medida para automatizar e escalar os processos da sua empresa.</p>
+            </div>
+            <div class="carousel-slide">
+              <h2>Consultoria Tech</h2>
+              <p>Análise e direcionamento estratégico para modernizar a infraestrutura do seu negócio.</p>
+            </div>
+          </div>
+          
+          <button id="btn-avancar" class="carousel-btn">❯</button>
+        </div>
+      </section>
+
+      <section id="projetos" class="secao">
+        <h2 class="titulo">Nossos Projetos</h2>
+        <p style="text-align: center;">Área em construção para o portfólio...</p>
+      </section>
+
+      <section id="contato" class="secao" style="min-height: 50vh;">
+        <h2 class="titulo">Entre em Contato</h2>
+        <p style="text-align: center;">Formulário de contato em breve...</p>
+      </section>
     </main>
 
-    <script type="module" src="/src/main.js"></script> </body>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
