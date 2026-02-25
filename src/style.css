@@ -1,0 +1,90 @@
+/* Reset e Variáveis modernas */
+:root {
+  --cor-fundo: #0f172a;
+  --cor-primaria: #3b82f6;
+  --cor-texto: #f8fafc;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.titulo {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Estrutura do Carrossel */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Limita a largura no PC */
+  margin: 0 auto;
+}
+
+.carousel-track {
+  display: flex;
+  overflow-x: auto;
+  gap: 1.5rem;
+  padding: 1rem;
+  
+  /* A mágica do Scroll Snap */
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  
+  /* Esconde a barra de rolagem nativa */
+  scrollbar-width: none; 
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none; 
+}
+
+/* Os Slides */
+.carousel-slide {
+  flex: 0 0 100%; /* Cada slide ocupa 100% do container */
+  scroll-snap-align: center; /* Centraliza ao parar de rolar */
+  background-color: var(--cor-primaria);
+  border-radius: 16px;
+  padding: 4rem 2rem;
+  text-align: center;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.carousel-slide:hover {
+  transform: scale(1.02); 
+}
+
+/* Botões de navegação */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  backdrop-filter: blur(4px);
+  z-index: 10;
+  transition: background 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+#btn-voltar { left: -15px; }
+#btn-avancar { right: -15px; }
