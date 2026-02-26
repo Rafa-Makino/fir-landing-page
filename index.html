@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FIR* Technology Solutions</title>
-
     <link rel="icon" type="image/png" href="/favicon1.png" />
   </head>
   <body>
@@ -33,7 +32,7 @@
 
     <main>
       <section class="hero">
-        <h2>Transformando ideias em <span class="destaque-neon">Soluções Digitais</span></h2>
+        <h2>Transformando ideias em <br><span class="destaque-neon">Soluções Digitais</span></h2>
         <p>Potencialize o seu negócio com tecnologia de ponta, performance extrema e design focado em resultados.</p>
         <a href="#servicos" class="btn-principal">Conheça Nossas Soluções</a>
       </section>
@@ -65,15 +64,88 @@
 
       <section id="projetos" class="secao">
         <h2 class="titulo">Nossos Projetos</h2>
-        <p style="text-align: center;">Área em construção para o portfólio...</p>
+        
+        <div class="grid-projetos">
+          <div class="projeto-card">
+            <div class="img-container">
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Projeto E-commerce" class="projeto-img">
+            </div>
+            <div class="projeto-conteudo">
+              <h3>E-commerce Tech</h3>
+              <p>Plataforma de vendas ultra-rápida desenvolvida focada em experiência do usuário e alta conversão.</p>
+              <a href="#" class="link-projeto">Ver detalhes ➔</a>
+            </div>
+          </div>
+
+          <div class="projeto-card">
+            <div class="img-container">
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" alt="Projeto Dashboard" class="projeto-img">
+            </div>
+            <div class="projeto-conteudo">
+              <h3>Dashboard Analytics</h3>
+              <p>Sistema web sob medida para análise de dados em tempo real com gráficos interativos.</p>
+              <a href="#" class="link-projeto">Ver detalhes ➔</a>
+            </div>
+          </div>
+
+          <div class="projeto-card">
+            <div class="img-container">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Projeto App" class="projeto-img">
+            </div>
+            <div class="projeto-conteudo">
+              <h3>App Institucional</h3>
+              <p>Design moderno e responsivo criado para consolidar a marca digitalmente e captar leads.</p>
+              <a href="#" class="link-projeto">Ver detalhes ➔</a>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section id="contato" class="secao" style="min-height: 50vh;">
+      <section id="contato" class="secao">
         <h2 class="titulo">Entre em Contato</h2>
-        <p style="text-align: center;">Formulário de contato em breve...</p>
+        <p style="text-align: center; margin-bottom: 3rem; color: var(--cor-texto);">
+          Pronto para transformar sua ideia em realidade? Mande uma mensagem para nossa equipe.
+        </p>
+        
+        <div class="form-container">
+          <form action="#" method="POST" class="contato-form">
+            <div class="input-group">
+              <label for="nome">Nome Completo</label>
+              <input type="text" id="nome" name="nome" required placeholder="Como devemos te chamar?">
+            </div>
+            
+            <div class="input-group">
+              <label for="email">E-mail Profissional</label>
+              <input type="email" id="email" name="email" required placeholder="seu@email.com">
+            </div>
+
+            <div class="input-group">
+              <label for="whatsapp">Telefone / WhatsApp</label>
+              <input type="tel" id="whatsapp" name="whatsapp" required placeholder="(DDD) 90000-0000">
+            </div>
+
+            <div class="input-group">
+              <label for="link-projeto">Link do Design ou Referência (Opcional)</label>
+              <input type="url" id="link-projeto" name="link_projeto" placeholder="Cole a URL do Figma, Drive, etc...">
+            </div>
+            
+            <div class="input-group">
+              <label for="mensagem">Como podemos ajudar?</label>
+              <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Descreva brevemente o seu projeto ou desafio..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn-principal btn-enviar">Enviar Mensagem</button>
+          </form>
+        </div>
       </section>
     </main>
 
     <script type="module" src="/src/main.js"></script>
+    
+    <a href="https://wa.me/5511999999999?text=Boa%20tarde!%20Gostaria%20de%20fazer%20um%20or%C3%A7amento" target="_blank" class="whatsapp-float">
+      <svg viewBox="0 0 32 32" class="whatsapp-icon">
+        <path d="M16.002 0h-.004C7.16 0 .002 7.158.002 16.002c0 2.946.804 5.726 2.22 8.132L.002 32l8.03-2.106c2.32 1.328 4.966 2.096 7.966 2.096h.004C24.84 31.99 32 24.832 32 15.99 32 7.156 24.842 0 16.002 0zm0 29.288h-.002c-2.5 0-4.936-.67-7.072-1.936l-.508-.3-5.252 1.378 1.4-5.12-.33-.525C2.88 20.468 2.11 18.286 2.11 15.99c0-7.66 6.236-13.894 13.896-13.894 7.66 0 13.894 6.234 13.894 13.894S23.662 29.288 16.002 29.288zm7.62-10.384c-.418-.21-2.474-1.222-2.856-1.36-.382-.14-.66-.21-.938.21-.28.42-1.076 1.36-1.32 1.64-.242.278-.484.312-.902.102-3.134-1.572-4.576-2.586-6.386-4.99-.196-.26-.02-.4.188-.588.188-.17.418-.49.626-.734.21-.242.278-.418.418-.696.14-.28.07-.525-.035-.735-.104-.21-1.002-2.414-1.368-3.32-.364-.906-.734-.78-1.002-.795-.262-.015-.562-.015-.842-.015-.28 0-.734.105-1.116.525s-1.464 1.432-1.464 3.492 1.5 4.05 1.71 4.33 2.96 4.516 7.16 6.326c1 .43 1.78.686 2.392.88.998.317 1.906.27 2.624.164.802-.12 2.474-1.01 2.822-1.99.348-.978.348-1.815.242-1.99-.104-.175-.382-.28-.8-.49z" fill="currentColor"/>
+      </svg>
+    </a>
   </body>
 </html>
